@@ -11,9 +11,9 @@ SANS_STYLES  := Regular Bold Italic
 REGULAR_ONLY := Math Mono Keyboard SerifDisplay SerifInitials
 
 FontStyles = $(SERIF_STYLES)
-INSTANCES = $(foreach STYLE,$(SERIF_STYLES),$(PROJECT)Serif-$(STYLE)) \
-			$(foreach STYLE,$(SANS_STYLES),$(PROJECT)Sans-$(STYLE)) \
-			$(foreach FACE,$(REGULAR_ONLY),$(PROJECT)$(FACE)-Regular)
+INSTANCES = $(foreach STYLE,$(SERIF_STYLES),LibertinusSerif-$(STYLE)) \
+			$(foreach STYLE,$(SANS_STYLES),LibertinusSans-$(STYLE)) \
+			$(foreach FACE,$(REGULAR_ONLY),Libertinus$(FACE)-Regular)
 
 nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
 
